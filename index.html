@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Julia and Dom's Family Disco</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row bg-white">
+            <div class="col-12 p-0">
+                <div class="jumbotron min-vh-100 text-center m-0 d-flex flex-column justify-content-center">
+                    <h1 class="display-4">Julia and Dom's Family Disco</h1>
+                    <div class="lead">
+                        <div id="twitch-embed"></div>
+                    </div>
+                    <p class="lead"><a href="https://www.facebook.com/groups/julia.and.doms.family.disco/">https://www.facebook.com/groups/julia.and.doms.family.disco/</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "dominicarmitage"
+      });
+    </script>
+  </body>
+</html>
