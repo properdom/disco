@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,6 +26,35 @@
         height: 100%;
         top: 0;
       }
+
+      .twitch .chat {
+        height: auto;
+      }
+
+      .twitch .chat iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media screen and (min-width: 850px) {
+        .twitch {
+          position: relative;
+        }
+
+        .twitch .twitch-video {
+          width: 75%;
+          padding-top: 42.1875%;
+        }
+
+        .twitch .chat {
+          width: 25%;
+          height: auto;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
     </style>
 
     <title>Disco</title>
@@ -44,7 +74,7 @@
           width="100%">
         </iframe>
       </div>
-      <div>
+      <div class="chat">
         <div class="fb-comments" data-href="https://properdom.github.io/disco/" data-width="100%" data-numposts="50"></div>
       </div>
     </div>
